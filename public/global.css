@@ -21,6 +21,8 @@ a {
 
 a:hover {
   text-decoration: underline;
+  font-size: 25px;
+  
 }
 
 a:visited {
@@ -32,7 +34,6 @@ label {
 }
 
 input,
-button,
 select,
 textarea {
   font-family: inherit;
@@ -94,4 +95,17 @@ nav {
   margin-top: 100px;;
   padding: 10px;
   box-shadow: 50px 50px 50px black;
+}
+
+.tableDiv{
+  margin: auto;
+  margin-top: 100px;
+}
+
+table{
+  margin: auto;
+}
+td, th{
+  padding-left: 100px;
+  padding-top: 30px;
 }
