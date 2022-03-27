@@ -104,11 +104,26 @@ nav {
 
 table{
   margin: auto;
+  box-shadow: 10px 10px 10px black;
+
+}
+
+th{
+  background-color: lightblue;
+  font-size: 25px;;
 }
 td, th{
-  padding-left: 100px;
-  padding-top: 30px;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 15px;
+padding-bottom: 15px;
+
+
 }
+tr:nth-child(even){
+  background: lightgray;
+}
+
 
 .tableImg{
   width: 100px;
