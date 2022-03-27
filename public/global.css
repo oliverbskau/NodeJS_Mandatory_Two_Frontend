@@ -76,13 +76,19 @@ button:focus {
   box-shadow: 5px 5px 30px black;
 }
 
-nav {
+#pagesNav, #shopCategories {
   font-size: 30px;
   text-decoration: none;
   font-family: 'Times New Roman', Times, serif;
   word-spacing: 100px;
   box-shadow: 10px 5px 30px black;
   background-color: rgb(121, 217, 255);
+}
+
+#shopCategories{
+  margin: auto;
+  margin-top: 100px;
+  width: 200px;
 }
 
 
@@ -128,4 +134,11 @@ tr:nth-child(even){
 .tableImg{
   width: 100px;
   height: 100px;
+}
+
+.content{
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 10px 5px 10px black;
+  width: 800px;
 }

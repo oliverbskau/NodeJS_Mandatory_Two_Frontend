@@ -1,3 +1,8 @@
+<script>
+import CategoryNavigation from "../../components/CategoryNavigation/CategoryNavigation.svelte";
+
+</script>
+
 
 
 

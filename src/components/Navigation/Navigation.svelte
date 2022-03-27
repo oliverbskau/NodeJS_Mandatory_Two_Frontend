@@ -9,6 +9,10 @@
 
     function showCategories(){
             const shopLink = document.getElementById("shopCategories").hidden = false;
+            const categoriesNav = document.getElementById("shopCategories");
+            categoriesNav.style.margin = "auto";
+            categoriesNav.style.marginTop = "100px";
+            categoriesNav.style.width = "200px";
    }
    function hideCategories(){
             const shopLink = document.getElementById("shopCategories").hidden = true;

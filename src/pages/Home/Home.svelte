@@ -28,15 +28,3 @@
 </div>
 
 
-
-<style>
-
-.content{
-  margin: auto;
-  margin-top: 100px;
-  box-shadow: 10px 5px 10px black;
-  width: 800px;
-}
-
-
-</style>

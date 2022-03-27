@@ -13,6 +13,9 @@
    }
    function hidePagesNav(){
             const menuLink = document.getElementById("pagesNav").hidden = true;
+            const categoriesNav = document.getElementById("shopCategories");
+            categoriesNav.style.margin = 0;
+            categoriesNav.style.width = "100%";
    }
    function returnHome(){
        document.getElementById("shopCategories").hidden = true;
