@@ -109,3 +109,8 @@ td, th{
   padding-left: 100px;
   padding-top: 30px;
 }
+
+.tableImg{
+  width: 100px;
+  height: 100px;
+}
