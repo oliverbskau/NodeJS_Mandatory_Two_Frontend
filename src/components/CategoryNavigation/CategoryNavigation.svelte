@@ -6,6 +6,7 @@
     import Clothes from "../../pages/Clothes/Clothes.svelte";
     import Electronics from "../../pages/Ëlectronics/Electronics.svelte";
    import Accessories from "../../pages/Accessories/Accesories.svelte";
+   import Cart from "../Cart/Cart.svelte";
 
 
     function showPagessNav(){
@@ -35,6 +36,7 @@
         <Link on:click={hidePagesNav} to="/clothes">Clothes</Link>
         <Link on:click={hidePagesNav} to="/shoes">Shoes</Link>
         <Link on:click={hidePagesNav} to="/accessories">Accessories</Link>
+        <Link on:click={hidePagesNav} to="/cart">🛒</Link>
         
     </nav>
 
@@ -42,5 +44,6 @@
     <Route path="/clothes" component={Clothes} />
     <Route path="/shoes" component={Shoes} />
     <Route path="/accessories" component={Accessories} />
+    <Route path="/cart" component={Cart} />
  
  </Router>

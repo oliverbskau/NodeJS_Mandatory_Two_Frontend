@@ -1,7 +1,7 @@
 <script>
 
     let shoepic1 = "./images/shoepic1.webp";
-    let shoepic2 = "./images/shoepic2.webp.crdownload";
+    let shoepic2 = "./images/shoepic2.jpg";
     let shoepic3 = "./images/shoepic3.webp";
     let shoepic4 = "./images/shoepic4.webp";
     let shoepic5 = "./images/shoepic5.webp";

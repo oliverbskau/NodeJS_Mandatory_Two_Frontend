@@ -6,6 +6,7 @@
     import About from "../../pages/About/About.svelte";
     import Contact from "../../pages/Contact/Contact.svelte";
     import Shop from "../../pages/Shop/Shop.svelte";
+    import Cart from "../Cart/Cart.svelte";
 
     function showCategories(){
             const shopLink = document.getElementById("shopCategories").hidden = false;
@@ -32,14 +33,19 @@
             <Link on:click={showCategories} to="/shop">Shop</Link>
             <Link on:click={hideCategories} to="/about">About</Link>
             <Link on:click={hideCategories} to="/contact">Contact</Link>
+            <Link on:click={hideCategories} to="/cart">🛒</Link>
         </nav>
     
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route path="/shop" component={Shop} />
         <Route path="/" component={Home} />
+        
 
 	
 </Router>
+
+
+
 </div>
 
