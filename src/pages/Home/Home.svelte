@@ -1,12 +1,9 @@
-
 <script>
     import SliderGalery from "simple-svelte-slideshow";
-
     let clothesPicture = "./clothes.jpg";
     let electronicsPicture = "./electronic-gadgets.jpeg";
     let shoesPicture ="./shoes.jpg";
     let accesoriesPicture ="./accesories.jpg"
-
     let imgArray = [
         {src: clothesPicture, text: "Clothes"},
         {src: electronicsPicture, text: "Electronics"},
@@ -26,5 +23,3 @@
 <div class="content">
     <SliderGalery class="slider" {imgArray} {duration} {easingMethod} />
 </div>
-
-

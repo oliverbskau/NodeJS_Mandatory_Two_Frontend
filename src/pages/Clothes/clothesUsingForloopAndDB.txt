@@ -1,0 +1,67 @@
+
+<script>
+
+    let clothespic0 = "./images/clothespic1.jpg";
+    let clothespic1= "./images/clothespic2.jpg";
+    let clothespic2 = "./images/clothespic3.jpg";
+    let clothespic3 = "./images/clothespic4.avif";
+    let clothespic4 = "./images/clothespic5.jpg";
+
+    let clothesPicArray = [
+        clothespic0,
+        clothespic1,
+        clothespic2,
+        clothespic3,
+        clothespic4
+    ]
+
+ const urlClothes = "http://localhost:3000/clothes";
+ const clothesArray = [];
+ async function fetchClothes(){
+     const promise = await fetch(urlClothes).then(response => response.json());
+         
+     const tableRow = document.getElementById("clothingTable");
+
+    let finalTdString;
+    for(let i = 0; i < promise.clothes.length; i++){        
+        let tdTagString = 
+        "<tr><td>"
+             + "<img src=" + clothesPicArray[i] + " alt='clothingItem' width='100px' height=''100px/>" + 
+            "</td>" +
+        "<td>" + promise.clothes[i].name + "</td>" +
+        "<td>$" + promise.clothes[i].price + "</td>" +
+        "<td>" + promise.clothes[i].description + "</td>"+
+        "<td><button>Add</button></td></tr>";
+        
+        finalTdString += tdTagString;
+        
+     }
+    
+     tableRow.innerHTML = 
+     "<tr>"+
+        "<th>image</th>"+
+        "<th>name</th>"+
+        "<th>price</th>"+
+        "<th>description</th>"+
+        "<th>Add</th>"+
+    "</tr>" + finalTdString;  
+ }
+
+
+
+ fetchClothes();
+
+</script>
+
+
+
+<div class="headline">
+    <h1>Clothes</h1>
+</div>
+
+
+<div class="tableDiv">
+<table id="clothingTable">
+   
+</table>
+</div>
