@@ -24,4 +24,5 @@
 {#each clothesArray as clothing}
     <Product item={clothing}/>
 {/each}
+
 </div>
